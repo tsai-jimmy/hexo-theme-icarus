@@ -16,7 +16,7 @@ common:
 widget:
     follow: 'Follow'
     recents: 'Recent'
-    links: 'Links'
+    links: 'Recommend Links'
     tag_cloud: 'Tag Cloud'
     catalogue: 'Catalogue'
 article:
