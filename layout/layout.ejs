@@ -31,5 +31,13 @@
     <% if (has_config('search.type')) { %>
     <%- partial('search/' + get_config('search.type')) %>
     <% } %>
+
+    <% if (get_config('comment.count')) { %>
+        <script
+          id="dsq-count-scr"
+          src="<%= 'https://' + get_config('comment.shortname') + '.disqus.com/count.js' %>"
+          async
+        ></script>
+    <% } %>
 </body>
 </html>

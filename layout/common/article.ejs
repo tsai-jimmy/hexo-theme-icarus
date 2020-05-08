@@ -36,6 +36,20 @@
                     <%- _p('plugin.visit', '<span id="busuanzi_value_page_pv">0</span>') %>
                 </span>
                 <% } %>
+                <% if (has_config('comment.shortname') && get_config('comment.count') === true) { %>
+                    <span class="comments-count has-text-grey">
+                      <span class="post-meta-item-icon">
+                        <i class="fas fa-comment"></i>
+                      </span>
+                      <a
+                        href="<%- post.permalink + 'index.html#disqus_thread' %>"
+                        class="has-link-grey"
+                        data-disqus-identifier="<%= post.path %>"
+                        itemprop="discussionUrl"
+                      >
+                      </a>
+                    </span>
+                <% } %>
             </div>
         </div>
         <% } %>
